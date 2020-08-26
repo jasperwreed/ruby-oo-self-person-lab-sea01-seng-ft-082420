@@ -62,18 +62,37 @@ class Person
         # end
     end
 
+    # def start_conversation(person, topic)
+    #     people = [person, self]
+    #     if topic == "politics" 
+    #         people.each { |i| i.happiness -= 2 }
+    #         "blah blah partisan blah lobbyist"
+    #     elsif topic == "weather"
+    #         people.each { |i| i.happiness += 1 }
+    #         "blah blah sun blah rain"
+    #     else
+    #         "blah blah blah blah blah"
+    #     end
+    # end
+
     def start_conversation(person, topic)
         people = [person, self]
         if topic == "politics" 
             people.each { |i| i.happiness -= 2 }
-            "blah blah partisan blah lobbyist"
+            blah = "partisan"
+            blah2 = "lobbyist"
+            "blah blah #{blah} blah #{blah2}"
         elsif topic == "weather"
             people.each { |i| i.happiness += 1 }
-            "blah blah sun blah rain"
+            blah = "sun"
+            blah2 = "rain"
+            "blah blah #{blah} blah #{blah2}"
         else
-            "blah blah blah blah blah"
+            blah = "blah"
+            blah2 = "blah"
+            "blah blah #{blah} blah #{blah2}"
         end
     end
-
+    
 end
 
